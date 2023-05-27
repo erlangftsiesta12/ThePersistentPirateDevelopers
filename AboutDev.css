@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Permanent+Marker&family=Poppins&family=Ubuntu:ital@1&display=swap');
+:root {
+    --ff-style: 'Poppins', 'Verdana'
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h1 {
+    color: white;
+    font-family: var(--ff-style);
+    font-size: 15px;
+}
+p {
+    color: white;
+    font-family: var(--ff-style);
+    font-size: 15px;
+}
+svg {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+svg:hover{
+    background-color: #000;
+    border-radius: 40%;
+    transition:all .4s ease-in-out;
+}
+svg::after {
+    background-color: white;
+    border-radius: 40%;
+}
+.social-media-E_A {
+    margin-left: 310px;
+}
+.social-media-J {
+    margin-left: 245px;
+}
+.social-media-E {
+    margin-left: 255px;
+}
+.biodata-E_A {
+    margin-left: 45px
+}
+.parents {
+    padding: 10px;
+    margin-top: 50px;
+    height: 650px;
+    width: 750px;
+    border: 3px solid white;
+    border-radius: 25px;
+    background:linear-gradient(rgb(0, 0, 0), rgb(34, 0, 93), rgb(0, 0, 0));
+    align-items: center;
+}
+.for-Siswa {
+    border: 1px solid black;
+    display: flex;
+    margin-top: 10px;
+}
+img {
+    border-radius: 50%;
+    margin-left: 15px;
+    max-width: max-content;
+}
+
+@media screen and (max-width: 400px) {
+    img, h1, p, svg{
+        width: 100%;
+    }
+}
